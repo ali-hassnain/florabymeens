@@ -1,13 +1,13 @@
 /**
  * Internal Dependencies.
  */
-import Header from "../src/Components/Layouts/Header/header";
-import Footer from "../src/Components/Layouts/Footer/footer";
-import Products from "../src/products/index";
+import Header from "../../src/Components/Layouts/Header/header";
+import Footer from "../../src/Components/Layouts/Footer/footer";
+import Products from "../../src/products/index";
 import {
   GET_PRODUCTS_ENDPOINT,
   HEADER_FOOTER_ENDPOINT,
-} from "../src/Utils/Constants/endpoints";
+} from "../../src/Utils/Constants/endpoints";
 
 /**
  * External Dependencies.
@@ -15,7 +15,7 @@ import {
 import axios from "axios";
 // import { getProductsData } from "../src/utils/products";
 
-export default function Home({ headerFooter, products }) {
+export default function Shop({ headerFooter, products }) {
   const { header, footer } = headerFooter || {};
   return (
     <div>

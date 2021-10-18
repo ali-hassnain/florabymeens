@@ -3,18 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "svg": "svg-d svg/components/icons src/components/icons/svgs"
   },
   "dependencies": {
+    "@svgr/cli": "^5.5.0",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "axios": "^0.22.0",
+    "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "dompurify": "^2.3.3",
+    "lodash": "^4.17.21",
     "next": "11.1.2",
+    "proptypes": "^1.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0",
+    "tailwindcss": "^2.2.16"
   }
 }
